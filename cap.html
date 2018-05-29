@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Weather or Not" />
+    <!--<meta property="og:image" content="https://tse2.mm.bing.net/th?id=OIP.2QLvJm85JUFixVvtVHXrngHaE8&pid=15.1&P=0&w=237&h=159" />-->
+    <meta property="og:description" content="Enables user to plan events while taking weather into consideration" />
+    <meta property="og:type" content="website" />
+    <!--<meta property="og:url" content="https://JLinnell.github.io/thinkful-second-capstone-Weather-Or-Not/" /> -->
+    <title>Weather or Not</title>
+    <link href="cap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main role=main>
+        <div class="start-display" id="start-page">
+            <header class="row" role="banner">
+                <h1 class="logo">Weather or Not</h1>
+                <p class="api-info">(Powered by OpenWeatherMap and Foursquare API)</p>
+                <p>If you would like to plan a day that involves Pi&#xF1;a Coladas and staying OUT of the rain, look no further! You've come to the right place!</p>
+            </header>
+
+            <form action="#" class="js-search-form row" id="search-query-form">
+                <input type="text" placeholder="Enter a city" class="js-query" id="search-term" required>
+                <button type="submit" class="submit-button">Search</button>
+            </form>
+        </div>
+
+        <section class="weather row" id="weather-display">
+
+        </section>
+        <nav role="navigation" class="navigation hide" id="results-navigation">
+            <div class="options row">
+                <button class="category-button" id="foodDrink-button">FOOD & DRINK</button>
+                <button class="category-button" id="Indoors-button">INDOORS</button>
+                <button class="category-button" id="shopping-button">SHOPPING</button>
+                <button class="category-button" id="outdoors-button">OUTDOORS</button>
+                <button class="category-button" id="arts-button">ARTS</button>
+            </div>
+        </nav>
+
+        <section id="foursquare-results" class="row">
+
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cap.js"></script>
+</body>
+
+</html>
