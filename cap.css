@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -14,10 +18,10 @@ body {
     display: none;
 }
 
-/*a {
+a {
     text-decoration: none;
     color: steelblue;
-}*/
+}
 
 header p {
     font-size: 15px;
@@ -25,7 +29,8 @@ header p {
 
 header p.api-info {
     color: steelblue;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 header {
@@ -37,23 +42,25 @@ header {
 
 .start-display {
     height: 100vh;
-   /* background: url("./images/roads.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
     box-shadow: 0 0 10px black;
     padding-top: 200px;
     margin-bottom: 45px;
 }
 
 h1.logo {
-    font-family: 'Megrim', sans-serif;
+    font-family: 'Eczar', serif;
     font-size: 60px;
-    margin-bottom: 15px;
 }
 
 form {
     padding: 30px;
+}
+
+label {
+    font-size: 35px;
+    font-weight: bold;
+    color: steelblue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 form input {
@@ -80,9 +87,6 @@ form a {
     text-decoration: none;
 }
 
-
-/***** WEATHER DISPLAY *****/
-
 .weather-results {
     padding: 10px;
     margin: 30px 0;
@@ -106,7 +110,6 @@ form a {
     background: rgba(230, 223, 223, 0.7);
     border-radius: 5px;
 }
-
 
 /***** NAVIGATION *****/
 
@@ -133,19 +136,7 @@ button.selected {
     background: #ccc;
 }
 
-
 /***** RESULT DISPLAY *****/
-
-div .result-image {
-    width: 100%;
-    float: left;
-    height: 15em;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-size: cover;
-    background-position: center center;
-}
-
 .col-3,
 .result {
     margin: 10px;
@@ -164,9 +155,7 @@ div .result-image {
 
 .result-description h2 {
     font-size: 1.3em;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    ;
 }
 
 #foursquare-results span {
@@ -182,16 +171,7 @@ div .result-image {
     padding: 8px 4px 0 4px;
 }
 
-
-/***** FOOTER *****/
-
-
-
 /***** RESPONSIVE DESIGN *****/
-
-* {
-    box-sizing: border-box;
-}
 
 .row {
     max-width: 1000px;
@@ -205,5 +185,13 @@ div .result-image {
         width: 30%;
         display: inline-block;
         vertical-align: text-top;
+    }
+    form {
+        
+        text-align: center;
+    }
+
+    input {
+        margin: 0 auto;
     }
 }

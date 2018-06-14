@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Weather or Not" />
-    <!--<meta property="og:image" content="https://tse2.mm.bing.net/th?id=OIP.2QLvJm85JUFixVvtVHXrngHaE8&pid=15.1&P=0&w=237&h=159" />-->
+    <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
     <meta property="og:description" content="Enables user to plan events while taking weather into consideration" />
     <meta property="og:type" content="website" />
-    <!--<meta property="og:url" content="https://JLinnell.github.io/thinkful-second-capstone-Weather-Or-Not/" /> -->
     <title>Weather or Not</title>
     <link href="cap.css" rel="stylesheet" />
 </head>
@@ -16,13 +15,14 @@
 <body>
     <main role=main>
         <div class="start-display" id="start-page">
-            <header class="row" role="banner">
+            <header class="row">
                 <h1 class="logo">Weather or Not</h1>
                 <p class="api-info">(Powered by OpenWeatherMap and Foursquare API)</p>
                 <p>If you would like to plan a day that involves Pi&#xF1;a Coladas and staying OUT of the rain, look no further! You've come to the right place!</p>
             </header>
 
-            <form action="#" class="js-search-form row" id="search-query-form">
+            <form action="#" class="search-form row" id="search-query-form">
+                <label for="search-term">City</label>
                 <input type="text" placeholder="Enter a city" class="js-query" id="search-term" required>
                 <button type="submit" class="submit-button">Search</button>
             </form>
@@ -33,11 +33,11 @@
         </section>
         <nav role="navigation" class="navigation hide" id="results-navigation">
             <div class="options row">
-                <button class="category-button" id="foodDrink-button">FOOD & DRINK</button>
-                <button class="category-button" id="Indoors-button">INDOORS</button>
-                <button class="category-button" id="shopping-button">SHOPPING</button>
+                <button class="category-button" id="food-button">FOOD</button>
+                <button class="category-button" id="nightlife-button">NIGHTLIFE</button>
+                <button class="category-button" id="shops-button">SHOPS</button>
                 <button class="category-button" id="outdoors-button">OUTDOORS</button>
-                <button class="category-button" id="arts-button">ARTS</button>
+                <button class="category-button" id="entertainment-button">ARTS</button>
             </div>
         </nav>
 
