@@ -140,25 +140,4 @@ function displayResults(result) {
 `;
 }
 
-/*function lettersOnly(input) {
-    let regex = /[^a-z]/gi;
-    $('#search-term').key
- }*/
-
-/* $("#search-term").validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2
-      }
-    },
-    messages: {
-      name: {
-        required: "Please try again!",
-        minlength: jQuery.validator.format("At least {0} characters required!")
-      }
-    }
-  });*/
-
-
 $(enterLocation);
