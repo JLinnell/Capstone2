@@ -43,7 +43,7 @@ function enterLocation() {
         $('#foursquare-results').html("");
         $('button').removeClass("selected");
         getGeocodeData(query, handleGeocodeResponse);
-    });
+     } });
 }
 
 function handleGeocodeResponse(response) {
