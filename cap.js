@@ -24,6 +24,11 @@ function getGeocodeData(searchTerm, callback) {
 }
 
 function enterLocation() {
+    /*let options = {
+        types: ['(regions)']
+    };
+    let input = document.getElementById('search-term');
+    queryTarget.val("");*/
     $('.category-button').click(function () {
         $('button').removeClass("selected");
         $(this).addClass("selected");
@@ -34,6 +39,7 @@ function enterLocation() {
         const query = queryTarget.val();
         console.log(query);
         queryTarget.val("");
+        //add code here
         $('.navigation').removeClass("hide");
         $('#weather-display').html("");
         $('#foursquare-results').html("");
@@ -135,6 +141,26 @@ function displayResults(result) {
 </div>
 `;
 }
+
+/*function lettersOnly(input) {
+    let regex = /[^a-z]/gi;
+    $('#search-term').key
+ }*/
+
+/* $("#search-term").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      }
+    },
+    messages: {
+      name: {
+        required: "Please try again!",
+        minlength: jQuery.validator.format("At least {0} characters required!")
+      }
+    }
+  });*/
 
 
 $(enterLocation);

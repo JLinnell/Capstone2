@@ -23,7 +23,7 @@
 
             <form role="search" action="#" class="search-form row" id="search-query-form">
                 <label for="search-term">City</label>
-                <input type="text" placeholder="Enter a city" class="js-query" id="search-term" required>
+                <input type="text" placeholder="Enter a city" class="js-query" id="search-term" onkeyup="lettersOnly(this)" required>
                 <button type="submit" class="submit-button">Search</button>
             </form>
         </div>
