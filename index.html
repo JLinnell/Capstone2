@@ -21,11 +21,11 @@
                 <p>If you would like to plan a day that involves Pi&#xF1;a Coladas and staying OUT of the rain, look no further! You've come to the right place!</p>
             </header>
 
-            <form role="search" action="#" class="search-form row" id="search-query-form">
+            <form aria-live="assertive" role="search" action="#" class="search-form row" id="search-query-form">
                 <label for="search-term">City</label>
                 <input type="text" placeholder="Enter a city" class="js-query" id="search-term" onkeyup="lettersOnly(this)" required>
-                <button type="submit" class="submit-button">Search</button>
-                 <p role="alert" class="hidden" id="errMsg">Please enter a valid location</p>
+                <button  type="submit" class="submit-button">Search</button>
+                <p role="alert" class="hidden" id="errMsg">Please enter a valid location</p>
             </form>
         </div>
 
