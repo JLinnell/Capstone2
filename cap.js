@@ -38,12 +38,13 @@ function enterLocation() {
         if (restriction.test(query)) {
             $("#errMsg").removeClass("hidden");
         } else {
-        $('.navigation').removeClass("hide");
-        $('#weather-display').html("");
-        $('#foursquare-results').html("");
-        $('button').removeClass("selected");
-        getGeocodeData(query, handleGeocodeResponse);
-     } });
+            $('.navigation').removeClass("hide");
+            $('#weather-display').html("");
+            $('#foursquare-results').html("");
+            $('button').removeClass("selected");
+            getGeocodeData(query, handleGeocodeResponse);
+        }
+    });
 }
 
 function handleGeocodeResponse(response) {
@@ -139,26 +140,6 @@ function displayResults(result) {
 </div>
 `;
 }
-
-/*function lettersOnly(input) {
-    let regex = /[^a-z]/gi;
-    $('#search-term').key
- }*/
-
-/* $("#search-term").validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2
-      }
-    },
-    messages: {
-      name: {
-        required: "Please try again!",
-        minlength: jQuery.validator.format("At least {0} characters required!")
-      }
-    }
-  });*/
 
 
 $(enterLocation);
